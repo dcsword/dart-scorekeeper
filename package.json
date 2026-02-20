@@ -1,0 +1,14 @@
+{
+  "name": "dart501-app",
+  "private": true,
+  "version": "2.1.0",
+  "description": "Dart 501 scorekeeper (React + Node + Postgres)",
+  "scripts": {
+    "dev": "concurrently -n SERVER,CLIENT -c red,cyan \"npm:dev --prefix server\" \"npm:dev --prefix client\"",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
